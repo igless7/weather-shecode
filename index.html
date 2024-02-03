@@ -12,8 +12,8 @@
         <header>
             <img src="https://www.shecodes.io/assets/branding/logo-shecodes-f9fa0540d113c086f61eb6e89466c0cbd24a42163b6a96d4b01da078803f53ee.png" alt="logo" id="logo">
     
-            <form class="search-form">
-                <input type="search" placeholder="Enter a city" required class="search-input">
+            <form class="search-form" id="search-form">
+                <input type="search" placeholder="Enter a city" required class="search-input" id="search-input">
                 <input type="submit" value="Search" class="submit-input">
             </form>
         </header>
@@ -21,7 +21,7 @@
         <main>
             <div class="weather-app-data">
                 <div>
-                    <h1 class="weather-app-city">city</h1>
+                    <h1 class="weather-app-city" id="city">city</h1>
                     <p class="weather-app-details">Friday <span>17:09</span>, broken clouds </br>
                         Humidity: <span>66%</span>, Wind: <span>6.17km/h</span></p>
                 </div>
@@ -37,6 +37,6 @@
             <p>The project was coded by <a href="https://github.com/igless7">Monica </a>and is <a href="#">open-sourced on Github</a> and <a href="#">hosted on Netlify</a></p>
         </footer>
     </div>
-
+    <script src="index.js"></script>
 </body>
 </html>

@@ -74,6 +74,11 @@ main {
     font-size: 38px;
     font-weight: 700;
     line-height: 48px;
+    text-transform: lowercase;
+}
+
+.weather-app-city::first-letter {
+    text-transform: uppercase;
 }
 
 .weather-app-details {
