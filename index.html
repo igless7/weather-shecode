@@ -3,32 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather app</title>
 </head>
 <body>
+    <div class="weather-app">
+        <header>
+            <img src="https://www.shecodes.io/assets/branding/logo-shecodes-f9fa0540d113c086f61eb6e89466c0cbd24a42163b6a96d4b01da078803f53ee.png" alt="logo" id="logo">
     
-    <header>
-        <img src="https://www.shecodes.io/assets/branding/logo-shecodes-f9fa0540d113c086f61eb6e89466c0cbd24a42163b6a96d4b01da078803f53ee.png" alt="">
+            <form class="search-form">
+                <input type="search" placeholder="Enter a city" required class="search-input">
+                <input type="submit" value="Search" class="submit-input">
+            </form>
+        </header>
+    
+        <main>
+            <div class="weather-app-data">
+                <div>
+                    <h1 class="weather-app-city">city</h1>
+                    <p class="weather-app-details">Friday <span>17:09</span>, broken clouds </br>
+                        Humidity: <span>66%</span>, Wind: <span>6.17km/h</span></p>
+                </div>
+        
+                <div class="weather-app-temperature">
+                    <div class="weather-app-icon">☁</div>
+                    <div class="weather-app-value">13</div>
+                    <div class="weather-app-unit">°C</div>  
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>The project was coded by <a href="https://github.com/igless7">Monica </a>and is <a href="#">open-sourced on Github</a> and <a href="#">hosted on Netlify</a></p>
+        </footer>
+    </div>
 
-        <form>
-            <input type="search" placeholder="Enter a city" required>
-            <input type="submit" value="Submit">
-        </form>
-    </header>
-
-    <main>
-        <div>
-            <h1>city</h1>
-            <p>Friday 17:09, broken clouds
-                Humidity: 66%, Wind: 6.17km/h</p>
-        </div>
-
-        <div>
-            13°C
-        </div>
-    </main>
-    <footer>
-        <p>The project was coded by <a href="https://github.com/igless7">Monica </a>and is <a href="#">open-sourced on Github</a> and <a href="#">hosted on Netlify</a></p>
-    </footer>
 </body>
 </html>
