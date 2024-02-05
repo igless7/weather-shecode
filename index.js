@@ -8,7 +8,9 @@ function updateWeather(response) {
     let timeElement = document.querySelector("#date");
     let date = new Date(response.data.time*1000);
     timeElement.innerHTML = formatDate(date);
-
+    let iconElement = document.querySelector("#icon");
+    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" alt="${response.data.condition.icon}" class="weather-app-icon">`;
+  
     temperatureElement.innerHTML = Math.round(temperature);
     cityElement.innerHTML = response.data.city;
     descriptionElement.innerHTML = response.data.condition.description;
