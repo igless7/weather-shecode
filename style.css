@@ -111,6 +111,8 @@ main {
 .weather-forecast {
     margin-top: 25px;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .weather-forecast-date {
@@ -121,10 +123,11 @@ main {
 
 .weather-forecast-temperature {
     font-size: 13px;
+    color: #f65282;
 }
 
-.weather-forecast-temp-min {
-    opacity: 0.5;
+.weather-forecast-temp-max {
+    font-weight: bolder;
 }
 
 footer {
