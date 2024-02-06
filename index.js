@@ -42,10 +42,13 @@ function searchCity(city) {
 function handleSearchSubmit(event) {
     event.preventDefault();
     let searchInput = document.querySelector("#search-input");
+    // we call the searCity function with the value
     searchCity(searchInput.value);
 }
 
 let searchFormElement = document.querySelector("#search-form");
+//SELECTED the entire form 
+//when search btn clicked we call handleSearchSubmit
 searchFormElement.addEventListener("submit",handleSearchSubmit);
 
 searchCity("paris");
